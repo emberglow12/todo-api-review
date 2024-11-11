@@ -1,0 +1,35 @@
+GET http://localhost:3000/tasks
+
+###
+
+GET http://localhost:3000/tasks?solt=oldest&count=4
+
+
+###
+
+GET http://localhost:3000/tasks/67308dfc661a236642b9db3
+
+
+###
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "수정 테스트 1번.",
+  "description": "수정 중"
+}
+
+###
+
+PATCH http://localhost:3000/tasks/67319c8a5e500965d05b9d7b
+Content-Type: application/json
+
+{
+  "title": "수정 테스트 1번.",
+  "description": "수정 중"
+}
+
+###
+
+DELETE http://localhost:3000/tasks/67319c8a5e500965d05b9d7b
